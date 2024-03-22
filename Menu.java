@@ -16,10 +16,29 @@ public class Menu {
         N1 =sc.nextDouble();
         System.out.println("Ingrese su Segundo numero");
         N2 =sc.nextDouble();
+        seleccion(option,N1,N2);
     }
-    seleccion(option,N1,N2);
+
     public void seleccion (int option,double a,double b){
-        System.out.println("Ingrese su primer numero"+c);
+        switch (option) {
+
+            case 1:
+            System.out.println("Su respuesta es:"+calculator.suma(a,b));
+            break;
+            case 2:
+                System.out.println("Su respuesta es:"+calculator.resta(a,b));
+                break;
+            case 3:
+                System.out.println("Su respuesta es:"+calculator.multiplicacion(a,b));
+                break;
+            case 4:
+                System.out.println("Su respuesta es:"+calculator.division(a,b));
+                break;
+            default:
+            case 1:
+                System.out.println("Error");
+                break;
+        }
     }
 
 }
