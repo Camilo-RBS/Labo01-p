@@ -1,8 +1,9 @@
 import java.util.*;
 
 public class Menu {
+    Calculator calculator=new Calculator();
     public void menu() {
-        Calculator calculator=new Calculator();
+
 
         Scanner sc = new Scanner(System.in);
     int option=0;
@@ -23,10 +24,10 @@ public class Menu {
         switch (option) {
 
             case 1:
-            System.out.println("Su respuesta es:"+calculator.suma(a,b));
+            System.out.println("Su respuesta es:"+calculator.sumar(a,b));
             break;
             case 2:
-                System.out.println("Su respuesta es:"+calculator.resta(a,b));
+                System.out.println("Su respuesta es:"+calculator.restar(a,b));
                 break;
             case 3:
                 System.out.println("Su respuesta es:"+calculator.multiplicacion(a,b));
@@ -35,7 +36,6 @@ public class Menu {
                 System.out.println("Su respuesta es:"+calculator.division(a,b));
                 break;
             default:
-            case 1:
                 System.out.println("Error");
                 break;
         }
